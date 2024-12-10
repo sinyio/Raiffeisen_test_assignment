@@ -15,7 +15,7 @@ export const Sort: FC<SortProps> = ({ onChange }) => {
 
   return (
     <Select
-      size={{ base: "l", s: "xl" }}
+      size={"xl"}
       placeholder="Сортировать"
       value={value}
       onSelect={handleSelect}

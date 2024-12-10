@@ -13,7 +13,7 @@ export const SearchBar: FC<SearcBarProps> = ({ onSearch }) => {
   return (
     <div>
       <Search
-        size={{ base: "l", s: "xl" }}
+        size={"xl"}
         placeholder="Введите название страны"
         value={value}
         onChange={handleChange}
