@@ -24,7 +24,6 @@ export const CountryList: FC<CountryListProps> = ({ countryList }) => {
           countryName={country.countryName}
           region={country.region}
           population={country.population}
-          flag={country.flag}
         />
       ))}
     </Flex>

@@ -37,8 +37,4 @@ export const Column = styled.div`
   &:first-child {
     flex: 0.4;
   }
-
-  &:last-child {
-    overflow: hidden;
-  }
 `;

@@ -3,7 +3,6 @@ export interface CountryItemProps {
   countryName: string;
   region: string;
   population: string;
-  flag: string;
 }
 
 export interface CountryItem extends CountryItemProps {}
