@@ -9,10 +9,15 @@ export const useCountryList = (name: string) => {
   const { data, isLoading, isSuccess, error } = useQuery({
     queryKey: ["Countries", name],
     queryFn: name ? () => getCountriesByName(name) : () => getCountries(),
-    retry: 0,
+    retry: (failureCount, error) => {
+      if (error.status === 404) {
+        return false;
+      }
+      return failureCount < 3;
+    },
     enabled: !wrongPrefix || !name.startsWith(wrongPrefix),
     select: (data) => {
-      if (!data) return null;
+      if (!data || data.length === 0) return null;
       return data.map((country, index) => ({
         id: index + 1,
         countryName: country.name.common,
