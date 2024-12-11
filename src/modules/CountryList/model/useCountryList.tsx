@@ -13,13 +13,11 @@ export const useCountryList = (name: string) => {
     enabled: !wrongPrefix || !name.startsWith(wrongPrefix),
     select: (data) => {
       if (!data) return null;
-
       return data.map((country, index) => ({
         id: index + 1,
         countryName: country.name.common,
         region: country.region,
         population: country.population,
-        flag: country.flags.png,
       }));
     },
   });

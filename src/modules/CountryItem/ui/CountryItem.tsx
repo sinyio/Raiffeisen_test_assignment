@@ -1,13 +1,12 @@
 import { FC } from "react";
 import { CountryItemProps } from "../types";
-import { Column, CountryItemContainer, FlagImage } from "./styled";
+import { Column, CountryItemContainer } from "./styled";
 
 export const CountryItem: FC<CountryItemProps> = ({
   id,
   countryName,
   region,
   population,
-  flag,
 }) => {
   return (
     <CountryItemContainer>
@@ -15,9 +14,6 @@ export const CountryItem: FC<CountryItemProps> = ({
       <Column>{countryName}</Column>
       <Column>{region}</Column>
       <Column>{population}</Column>
-      <Column>
-        <FlagImage src={flag} alt="Flag" />
-      </Column>
     </CountryItemContainer>
   );
 };

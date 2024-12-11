@@ -16,7 +16,6 @@ export const CountryList: FC<CountryListProps> = ({ countryList }) => {
         <HeaderColumn>Название</HeaderColumn>
         <HeaderColumn>Регион</HeaderColumn>
         <HeaderColumn>Население</HeaderColumn>
-        <HeaderColumn>Флаг</HeaderColumn>
       </Header>
       {countryList.map((country) => (
         <CountryItem

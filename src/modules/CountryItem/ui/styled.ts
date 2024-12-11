@@ -44,25 +44,3 @@ export const Column = styled.div`
     overflow: hidden;
   }
 `;
-
-export const FlagImage = styled.img`
-  object-fit: contain;
-  max-height: 82px;
-  gap: 12px;
-
-  @media (width < 1025px) {
-    max-height: 62px;
-  }
-
-  @media (width < 769px) {
-    max-height: 54px;
-  }
-
-  @media (width < 769px) {
-    max-height: 52px;
-  }
-
-  @media (width < 580px) {
-    max-height: 38px;
-  }
-`;
