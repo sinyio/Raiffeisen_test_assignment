@@ -27,8 +27,6 @@ export const CountryItemContainer = styled.div`
 
 export const Column = styled.div`
   flex: 1;
-  display: flex;
-  align-items: center;
   overflow: scroll;
   max-height: 100%;
 
