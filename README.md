@@ -19,7 +19,7 @@
    ```bash
    npm run dev
    ```
-4. **Проект доступен по адресу: http://localhost:5173/**
+4. **Решение доступно по адресу: http://localhost:5173/**
 
 &nbsp;
 
@@ -31,7 +31,7 @@
    docker-compose up
    ```
    
-2. **Проект доступен по адресу: http://localhost:5173/**
+2. **Решение доступно по адресу: http://localhost:5173/**
 
 &nbsp;
 
