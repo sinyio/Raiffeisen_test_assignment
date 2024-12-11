@@ -2,6 +2,10 @@ import { getCountries, getCountriesByName } from "@api/countriesControllerApi";
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 
+interface CustomError extends Error {
+  status?: number;
+}
+
 export const useCountryList = (name: string) => {
   const [wrongPrefix, setWrongPrefix] = useState<string>("");
   const [isError, setIsError] = useState<boolean>(false);
@@ -10,7 +14,8 @@ export const useCountryList = (name: string) => {
     queryKey: ["Countries", name],
     queryFn: name ? () => getCountriesByName(name) : () => getCountries(),
     retry: (failureCount, error) => {
-      if (error.status === 404) {
+      const customError = error as CustomError;
+      if (customError.status === 404) {
         return false;
       }
       return failureCount < 3;
