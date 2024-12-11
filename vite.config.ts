@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
 export default defineConfig({
@@ -19,5 +20,11 @@ export default defineConfig({
       "@api": resolve(__dirname, "src/shared/api"),
       "@ui": resolve(__dirname, "src/shared/ui"),
     },
+  },
+  plugins: [react()],
+  server: {
+    host: true,
+    strictPort: true,
+    port: 5173,
   },
 });
