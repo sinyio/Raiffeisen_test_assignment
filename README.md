@@ -19,7 +19,7 @@
    ```bash
    npm run dev
    ```
-4. **Решение доступно по адресу: http://localhost:5173/**
+4. **Решение доступно по адресу: [http://localhost:5173/](http://localhost:5173/)**
 
 &nbsp;
 
@@ -31,11 +31,11 @@
    docker-compose up
    ```
    
-2. **Решение доступно по адресу: http://localhost:5173/**
+2. **Решение доступно по адресу: [http://localhost:5173/](http://localhost:5173/)**
 
 &nbsp;
 
 ## Развернутое решение
 
-**Развернутое решение достпуно по адресу: https://raiffeisen-test-assignment.vercel.app/**
+**Развернутое решение достпуно по адресу: [https://raiffeisen-test-assignment.vercel.app/](https://raiffeisen-test-assignment.vercel.app/)**
 
